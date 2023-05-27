@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+picture, img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background: url('../images/pattern-background-mobile.svg') no-repeat, #E1E9Ff;
+    background-size: contain;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* MOBILE FIRST */
+
+.card {
+    width: 450px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.text {
+    width: 85%;
+    padding: 40px 0px ;
+    margin: 0 auto;
+}
+
+.description {
+    padding: 20px 30px 30px;
+}
+
+.summary-area {
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    font-size: 1.1rem;
+}
+
+.subscription-area {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.icon-img {
+    width: 20%;
+}
+
+.plan-cost {
+    line-height: 1.6;
+    margin-left: -40px;
+    align-self: center;
+}
+
+.action-area {
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0px 10px 30px 0px hsl(224, 23%, 55%);
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.85rem;
+}
+
+.change-link {
+    font-weight: 900;
+    align-self: center;
+    cursor: pointer;
+}
+.change-link:hover {
+    color: #000;
+}
+
+h2 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+.cancel-link {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancel-link:hover {
+    color: #000;
+}
+
+/* TABLET AND LAPTOP */
+
+@media only screen and (min-width: 575px) {
+    .card {
+        width: 500px;
+    }
+    .text {
+        width: 80%;
+        padding: 40px 10px;
+    }
+    .description {
+        padding: 20px 10px 30px;
+    }
+    .plan-cost {
+        margin-left: -50px;
+    }
+    button {
+        font-size: 1rem;
+    }
+    .cancel-link {
+        font-size: 1rem;
+    }
+}
