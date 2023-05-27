@@ -73,7 +73,10 @@ body {
     text-align: center;
 }
 
-button {
+.btn {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
     display: block;
     width: 100%;
     background-color: hsl(245, 75%, 52%);
@@ -87,13 +90,7 @@ button {
     box-shadow: 0px 10px 30px 0px hsl(224, 23%, 55%);
 }
 
-.btn {
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-button:hover {
+.btn:hover {
     background-color: hsl(224, 23%, 55%);
     font-weight: 900;
 }
@@ -147,7 +144,7 @@ h2 {
     .plan-cost {
         margin-left: -50px;
     }
-    button {
+    .btn {
         font-size: 1rem;
     }
     .cancel-link {
