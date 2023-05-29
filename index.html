@@ -5,39 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Order summary card</title>
   </head>
 
     <body>
-
-      <main class="card">
-        <section class="image-area">
-          <img class="card-img" src="images/illustration-hero.svg" alt="an illustration of a person dancing to music through a mobile phone">
-        </section>
-
-        <section class="text">
-          <div class="summary-area">
-            <h1>Order Summary</h1>
-            <p class="description">You can now listen to millions of songs, audiobooks, and podcasts on any 
-              device anywhere you like!</p>
-          </div>
-        
-          <div class="subscription-area">
-            <img class="icon-img" src="images/icon-music.svg" alt="musical note icon">
-            <div class="plan-cost">
-              <h2>Annual Plan</h2>
-              <p>$59.99/year</p>
+      <main>
+        <div class="container">
+          <div class="card">
+            <img class="card-img" src="images/illustration-hero.svg" alt="an illustration of a character dancing to music through headphones"> 
+            <div class="card-text row">
+              <h1>Order Summary</h1>
+              <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
             </div>
-            <a class="change-link" href="#"><p>Change</p></a>
+            <div class="card-subscription row">
+              <div class="pay">
+                <img class="music-icon" src="images/icon-music.svg" alt="music icon">
+                <ul>
+                  <li>
+                    <h2>Annual Plan</h2>
+                  </li>
+                  <li>
+                    <h3>$59.99/year</h3>
+                  </li>
+                </ul>
+                <span class="change-link">Change</span>
+              </div>
+            </div>
+            <div class="button btn row">
+              <button type="submit">Proceed to Payment</button>
+            </div>
+            <div class="cancel-order row">
+              <span class="cancel">Cancel Order</span>
+            </div>
           </div>
-
-          <div class="action-area">
-            <a class="btn" href="#">Proceed to Payment</a>
-            <a class="cancel-link" href="#"><p>Cancel Order</p>
-          </div>
-        </section>
-        
+        </div>
       </main>
-      
     </body>
 </html>
